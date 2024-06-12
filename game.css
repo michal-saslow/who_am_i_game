@@ -1,0 +1,287 @@
+﻿body {
+    overflow:hidden;
+}
+.bodyImgMove {
+    
+    background-image: url('תמונות דמויות/רקע זז.gif');
+}
+.bodyImg {
+    background-image: url('תמונות דמויות/רקע.gif');
+}
+.house_Roof {
+        background-image: url('תמונות דמויות/גג.png');
+        height: 9vh;
+}
+.house {
+    background-image: url('תמונות דמויות/ילד.png');
+    height: 200px;
+    width: 200px;
+    border: solid;
+}
+.house2 {
+    background-image: url('תמונות דמויות/חיה.png');
+    height: 200px;
+    width: 200px;
+    border: solid;
+}
+.imgCharater {
+    height: 15vh;
+    width:7vw;
+}
+#card_img {
+    height: 45vh;
+    width:18vw;
+    border:solid;
+    border-color:black;
+}
+.head {
+    height: 28vh;
+}
+#end{
+    height:15vh;
+}
+#timer {
+    height: 0%;
+}
+.progressId {
+    height: 50vh;
+    width: 2vw;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.levels{
+    height:20vh;
+    text-align:center;
+}
+
+h1 {
+   font-size:90px;
+}
+#divNone {
+    width: 20vw;
+    height: 60vh;
+    background-color: red;
+    display: none;
+    position:relative;
+    z-index:9999;
+}
+#divNone2 {
+    position: fixed;
+    top:70%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 20vw;
+    height: 35vh;
+    display: none;
+    
+    z-index: 9999;
+}
+
+#buttonCloseDivNone2 {
+    font-size: 20px;
+    border: solid;
+    border-color: white;
+    background-color: white;
+}
+
+#divn2 {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-items: center;
+    text-align: center;
+}
+#divpCnt {
+    text-align: center;
+    border: solid;
+    border-color: #204f8f;
+    border-width: thick;
+    border-radius: 30px 30px;
+    display: inline-block;
+    padding: 7px;
+}
+#pCnt {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 5px #204f8f;
+}
+#img_Instructions {
+    height: 87vh;
+    width: 95vw;
+}
+#imgEmoji {
+    width: 20vw;
+    height: 20vh;
+}
+#buttonHelp {
+    float: right;
+}
+
+#buttonHelpItem {
+    width: 15vw;
+    height: 20vh;
+}
+.dropdown-menu a[href="Instructions.html"],.dropdown-menu a[href="levels.html"],
+.dropdown-menu button#close-button {
+    text-align: right;
+    font-size: 20px;
+}
+.dropdown-menu button#close-button {
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+.btn {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.buttonLevel {
+    display: inline-block;
+    position: relative;
+    padding: 30px 80px;
+    margin: 40px 30px;
+    border: none;
+    border-radius: 80px;
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    background-color: #4CAF50;
+    box-shadow: inset 0 0 0 0 #4CAF50, 0 12px 12px rgba(0,0,0,0.6);
+    transition: ease-out .2s;
+}
+
+.buttonLevel:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -75px;
+    width: 50px;
+    height: 100%;
+    background-color: rgba(255,255,255,.08);
+    transform: skewX(-30deg);
+    transition: ease-out .2s;
+}
+
+.buttonLevel:hover {
+    box-shadow: inset 400px 0 0 0 #4CAF50, 0 5px 5px rgba(0,0,0,0.5);
+}
+
+    .buttonLevel:hover:before {
+        left: 75px;
+        transform: skewX(-30deg) rotate(6deg);
+    }
+.buttonInstructions {
+    display: inline-block;
+    position: relative;
+    padding: 20px 50px;
+    margin: 30px 20px;
+    border: none;
+    border-radius: 60px;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    background-color: #4CAF50;
+    box-shadow: inset 0 0 0 0 #4CAF50, 0 8px 8px rgba(0,0,0,0.6);
+    transition: ease-out .2s;
+    /*display: inline-block;
+    position: relative;
+    padding: 12px 30px;
+    margin: 20px 10px;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    background-color: #4CAF50;
+    box-shadow: inset 0 0 0 0 #4CAF50, 0 5px 5px rgba(0,0,0,0.4);
+    transition: ease-out .2s;*/
+}
+
+    .buttonInstructions:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -75px;
+        width: 50px;
+        height: 100%;
+        background-color: rgba(255,255,255,.08);
+        transform: skewX(-30deg);
+        transition: ease-out .2s;
+    }
+    .buttonInstructions:hover {
+        box-shadow: inset 400px 0 0 0 #4CAF50, 0 5px 5px rgba(0,0,0,0.5);
+    }
+    .buttonInstructions:hover:before {
+            left: 75px;
+            transform: skewX(-30deg) rotate(6deg);
+    }
+.p {
+    color: #ffc600d6;
+    font-weight: bold;
+    font-size: 100px;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 5px #f30c0cf0;
+    text-align:center;
+}
+.point {
+    color: #e91717d6;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-shadow: 1px 3px 2px #fbc724f0;
+    text-align: center;
+}
+.divp {
+    text-align: center;
+    border: solid;
+    border-color: #fdab05;
+    border-width: thick;
+    border-radius: 30px 30px;
+    display: inline-block;
+    padding: 7px;
+    margin: 10px;
+    height:25vh;
+    width:1vw;
+}
+#bodyend {
+    background-color: #a0f0e5;
+}
+.p2 {
+    color: #7b7b7b;
+    font-weight: bold;
+    font-size: 100px;
+    font-family: cursive;
+    text-shadow: 1px 0px 12px #f89833;
+}
+#divpoints {
+    text-align: center;
+    border: solid;
+    border-color: #fdab05;
+    border-width: thick;
+    border-radius: 30px 30px;
+    display: inline-block;
+    padding: 7px;
+    margin: 10px;
+    height: 40vh;
+    width: 20vw;
+}
+.audio{
+    height:50px;
+    width:100px;
+}
+#imgAudio{
+    height:50px;
+    width:50px;
+}
+.madeBy{
+    text-align:center;
+    font-family:'Guttman Frank';
+    color:black;
+    font-size:30px;
+}
